@@ -107,6 +107,8 @@ section {
 }
 
 .progress-bar--container{
+    border: 1px solid transparent;
+    border-radius: 0.8rem;
     background-color: rgb(31, 31, 31);
     max-width: 700px;
     width: 700px;
@@ -114,6 +116,9 @@ section {
 }
 
 .progress-bar{
+
+    border: 1px solid transparent;
+    border-radius: 0.8rem;
     background-color: rgb(122, 121, 121);
     height: 60px;
 }
