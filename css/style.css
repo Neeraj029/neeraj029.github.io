@@ -122,6 +122,37 @@ section {
     background-color: rgb(122, 121, 121);
     height: 60px;
 }
+/*CAUTION: Media queries ahead:*/
+@media screen and (max-width: 944px) {
+  p, h1, h2, h3, h4{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 880px){
+  .navbar{
+    display: flex;
+    flex-direction: column;  
+  }
+  #pfp{
+    width: 40px;
+  }
+  .profile{
+    margin-bottom: 20px;
+  }
+  .progress-bar--container{
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 518px){
+  a{
+    font-size: 15px;
+  }
+  .progress-bar--container{
+    max-width: 300px;
+  }
+} 
 
 .blue {
   background: var(--main-color);
