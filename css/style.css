@@ -143,16 +143,41 @@ section {
   .progress-bar--container{
     max-width: 400px;
   }
+  
 }
 
 @media screen and (max-width: 518px){
-  a{
+  a, h2, h3, h4{
     font-size: 15px;
+  }
+  li{
+    margin-right: 7px;
+  }
+  #projects > p{
+    font-size: 16px;
   }
   .progress-bar--container{
     max-width: 300px;
   }
 } 
+
+@media screen and (max-width: 442px){
+  .progress-bar--container{
+    max-width: 250px;
+  }
+  p{
+    font-size: 15px;
+  }
+  h1,h2,h3,h4{
+    font-size: 17px;
+  }
+  a{
+    font-size: 15px;
+  }
+  #projects > p{
+    font-size: 12px;
+  }
+}
 
 .blue {
   background: var(--main-color);
@@ -208,8 +233,8 @@ section {
 
 .bubble::after {
   content: "";
-  border-top-left-radius: 50% 100%;
-  border-top-right-radius: 50% 100%;
+  border-top-left-radius: 100% 100%;
+  border-top-right-radius: 100% 100%;
   position: absolute;
   bottom: 0;
   z-index: -1;
