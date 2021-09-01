@@ -154,7 +154,7 @@ section {
     margin-right: 7px;
   }
   #projects > p{
-    font-size: 16px;
+    font-size: 1em;
   }
   .progress-bar--container{
     max-width: 300px;
@@ -166,7 +166,7 @@ section {
     max-width: 250px;
   }
   p{
-    font-size: 15px;
+    font-size: 17px;
   }
   h1,h2,h3,h4{
     font-size: 17px;
@@ -175,7 +175,6 @@ section {
     font-size: 15px;
   }
   #projects > p{
-    font-size: 12px;
   }
 }
 
