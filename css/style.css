@@ -9,14 +9,14 @@
 }
 
 
-.custom-shape-divider-top{
-    margin-top: 500px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+.custom-shape-divider-top {
+  margin-top: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 body {
@@ -26,6 +26,7 @@ body {
   background: #202731;
   overflow-x: hidden;
 }
+
 li {
   display: inline;
   margin-right: 20px;
@@ -46,10 +47,10 @@ a {
   align-items: center;
 }
 
-.profile{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .main {
@@ -64,8 +65,7 @@ a {
   border-radius: 8rem;
 }
 
-.nav-bar--info {
-}
+.nav-bar--info {}
 
 .nav-btns {
   margin-top: 10px;
@@ -82,8 +82,8 @@ a {
   margin-top: 25px;
 }
 
-h1{
-    margin-top: 50px;
+h1 {
+  margin-top: 50px;
 }
 
 p {
@@ -102,80 +102,158 @@ section {
   padding-top: 100px;
 }
 
-.language-progress{
-    margin-top: 40px;
+.language-progress {
+  margin-top: 40px;
+
 }
 
-.progress-bar--container{
-    border: 1px solid transparent;
-    border-radius: 0.8rem;
-    background-color: rgb(31, 31, 31);
-    max-width: 700px;
-    width: 700px;
-    height: 60px;
+.knowledge {
+  display: flex;
 }
 
-.progress-bar{
-
-    border: 1px solid transparent;
-    border-radius: 0.8rem;
-    background-color: rgb(122, 121, 121);
-    height: 60px;
+.skills-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+  margin-top: 50px;
+  height: 80px;
 }
+
+.skills-items-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.project-container{
+  margin: 35px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s;
+  align-items: center;
+}
+
+.project-link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.project-container:hover{
+  cursor: pointer;
+}
+
+.project-thumbnail{
+  height: 180px;
+  border: 0px solid transparent;
+  border-radius: 100px;
+}
+
+#project-name{
+  margin-top: 20px;
+}
+
+.progress-bar--container {
+  border: 1px solid transparent;
+  border-radius: 0.8rem;
+  background-color: rgb(31, 31, 31);
+  max-width: 700px;
+  width: 700px;
+  height: 60px;
+}
+
+.progress-bar {
+
+  border: 1px solid transparent;
+  border-radius: 0.8rem;
+  background-color: rgb(122, 121, 121);
+  height: 60px;
+}
+
 /*CAUTION: Media queries ahead:*/
 @media screen and (max-width: 944px) {
-  p, h1, h2, h3, h4{
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4 {
     font-size: 20px;
   }
 }
 
-@media screen and (max-width: 880px){
-  .navbar{
+@media screen and (max-width: 880px) {
+  .navbar {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
   }
-  #pfp{
+
+  #pfp {
     width: 40px;
   }
-  .profile{
+
+  .profile {
     margin-bottom: 20px;
   }
-  .progress-bar--container{
+
+  .progress-bar--container {
     max-width: 400px;
   }
-  
+
 }
 
-@media screen and (max-width: 518px){
-  a, h2, h3, h4{
+@media screen and (max-width: 518px) {
+
+  a,
+  h2,
+  h3,
+  h4 {
     font-size: 15px;
   }
-  li{
+
+  li {
     margin-right: 7px;
   }
-  #projects > p{
+
+  #projects>p {
     font-size: 1em;
   }
-  .progress-bar--container{
+
+  .progress-bar--container {
     max-width: 300px;
   }
-} 
+}
 
-@media screen and (max-width: 442px){
-  .progress-bar--container{
+@media screen and (max-width: 442px) {
+  .progress-bar--container {
     max-width: 250px;
   }
-  p{
+
+  p {
     font-size: 17px;
   }
-  h1,h2,h3,h4{
+
+  h1,
+  h2,
+  h3,
+  h4 {
     font-size: 17px;
   }
-  a{
+
+  a {
     font-size: 15px;
   }
-  #projects > p{
-  }
+
+  #projects>p {}
 }
 
 .blue {
@@ -239,7 +317,7 @@ section {
   z-index: -1;
   width: 100%;
   background-color: #0f0f10;
-  height: 85%;
+  height: 95%;
 }
 
 /* Curved bg with SVG via https://www.shapedivider.app/ */
@@ -277,6 +355,7 @@ section {
 .layer1 {
   background-image: url("./layer1.svg");
 }
+
 .layer2 {
   background-image: url("./layer2.svg");
 }

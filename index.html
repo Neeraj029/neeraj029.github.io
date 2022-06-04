@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <script defer src="js/index.js"></script>
 </head>
+
 <body>
     <style>
-    
+
     </style>
     <div class="navbar">
         <div class="profile">
-            <img src="/static/profile.jpg" id="pfp"width="110px" alt="">
+            <img src="/static/profile.jpg" id="pfp" width="110px" alt="">
 
             <h3 style="font-family: 'Rubik', sans-serif;font: 25px;margin-left: 14px;">Neeraj S</h3>
         </div>
@@ -33,60 +37,106 @@
     </div>
     <section id="aboutme" class="blue">
         <h1 style="font-size: 30px;">Hi 👋🏻, I'm Neeraj.</h1>
-        <p>A 17 year old web/python developer who likes to code and to play minecraft with friends 😄</p>
-        <div style="fill: #8d0fc7;"class="custom-shape-divider-top">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        <p>A 17 year old web/python developer who likes to code and play around with arduinos / rpi 😄</p>
+        <div style="fill: #8d0fc7;" class="custom-shape-divider-top">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
             </svg>
         </div>
-      </section>
-  
-      <section id="skills 🧑‍🔧">
-        <h1>Skills</h1>
-        <div class="language-progress">
-            <h4 style="margin-bottom: 10px;">Python</h4>
-            <div class="progress-bar--container">
-                <div class="progress-bar" style="width: 90%;"></div>
-            </div>
-        </div>
-        <div class="language-progress">
-            <h4 style="margin-bottom: 10px;">JavaScript</h4>
-            <div class="progress-bar--container">
-                <div class="progress-bar" style="width: 40%;"></div>
-            </div>
-        </div>
-        <div class="language-progress">
-            <h4 style="margin-bottom: 10px;">HTML, CSS</h4>
-            <div class="progress-bar--container">
-                <div class="progress-bar" style="width: 50%;"></div>
-            </div>
-        </div>
-      </section>
+    </section>
 
-      <section id="projects" class="bubble">
-        <h1>Projects</h1> 
-        <p>Face recognition </p>
-        <p>Mask mask detector using Python and Tensorflow</p>
-        <p>ExpertBot using Discord.py</p>
-        <p>Voice assistant</p>
-        <p>Youtube/Amazon/Slack clone</p>
-      </section>
-  
-      <section id="contact" class="dark">
+    <section id="skills">
+        <h1>Skills 🧑‍🏭</h1>
+        <div class="knowledge">
+            <div class="skills-items-container">
+                <img class="skills-item" src="https://www.python.org/static/favicon.ico" alt="">
+                <!-- give title at the bottom of img  -->
+                <h3 id="python">Python</h3>
+            </div>
+            <div class="skills-items-container">
+
+                <img class="skills-item"
+                    src="data:image/png;base64,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"
+                    alt="">
+
+                <h3 id="js">Javascript</h3>
+            </div>
+            <div class="skills-items-container">
+
+                <img class="skills-item"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
+                    alt="">
+                <h3 id="html">Html</h3>
+            </div>
+
+            <div class="skills-items-container">
+
+                <img class="skills-item"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+                    alt="">
+
+                <h3 id="css">CSS</h3>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="bubble">
+        <h1>Projects 💪</h1>
+        <div class="projects">
+            <div class="project-container">
+                <a class="project-link" href="https://github.com/Neeraj029/Face-Mask-detection"><img class="project-thumbnail" src="/static/face_mask_detect.jpg  " alt="" srcset="">
+                <h4 id="project-name">Face mask detection</h4></a>
+            </div>
+            <div class="project-container">
+                <a class="project-link" href="https://github.com/Neeraj029/todo-app-flutter"><img class="project-thumbnail" src="/static/todo.png  " alt="" srcset="">
+                <h4 id="project-name">Todays todo</h4></a>
+            </div>
+            <div class="project-container">
+
+                <a class="project-link" href="https://github.com/Neeraj029/Youtube-Clone"><img class="project-thumbnail" src="data:image/png;base64,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 " alt="" srcset="">
+                <h4 id="project-name">Youtube clone</h4></a>
+            </div>
+            <div class="project-container">
+                <a class="project-link" href="https://github.com/Neeraj029/Slack-clone"><img class="project-thumbnail" src="data:image/jpeg;base64,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" alt="" srcset="">
+                <h4 id="project-name">Slack clone</h4></a>
+            </div>
+            <div class="project-container">
+                <a class="project-link" href="https://github.com/Neeraj029/Quickpad-Texteditor"><img class="project-thumbnail" src="https://raw.githubusercontent.com/Neeraj029/Quickpad-Texteditor/master/logo2.png " alt="" srcset="">
+                <h4 id="project-name">Quickpad Texteditor</h4></a>
+            </div>
+
+            <div class="project-container">
+                <a class="project-link" href="https://github.com/Neeraj029/ProcrastinationBot"><img class="project-thumbnail" src="./static/later.jpg" alt="" srcset="">
+                <h4 id="project-name">ProcrastinationBot</h4></a>
+            </div>
+
+            <div class="project-container">
+                <a class="project-link" href="https://github.com/Neeraj029/wallpaper-fetcher"><img class="project-thumbnail" src="/static/wallpaper-f.png " alt="" srcset="">
+                <h4 id="project-name">Wallpaper fetcher</h4></a>
+            </div>
+
+            <div class="project-container">
+                <a class="project-link" href="https://github.com/Neeraj029/iCoder-v2.0.1"><img class="project-thumbnail" src="/static/blog.jpg" alt="" srcset="">
+                <h4 id="project-name">iCoder - blog design</h4></a>
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+
+    <section id="contact" class="dark">
         <h1>Contact 📞</h1>
         <p style="text-align: center; margin-top: 5vw;">You can DM me at Neeraj#1004 😁</p>
-      </section>
-  
-  
-    <!-- <div class="main">
-        <div class="container">
+    </section>
 
-            <p style="font-weight: 550;font-size: xx-large;">Hi, I'm Neeraj.</p>
-            <p class="info" style="font-size: larger;"> 
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In hic fugit quos dolorum. Facilis neque repudiandae est eveniet quod voluptate voluptas, accusantium, excepturi molestias cupiditate sequi delectus suscipit dolorem eos?
-            </p>
-            <p>Hey</p>
-        </div>
-    </div> -->
 </body>
+
 </html>
