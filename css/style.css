@@ -82,9 +82,7 @@ a {
   margin-top: 25px;
 }
 
-h1 {
-  margin-top: 50px;
-}
+
 
 p {
   margin-top: 14px;
@@ -108,7 +106,8 @@ section {
 }
 
 .knowledge {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .skills-item {
@@ -116,7 +115,6 @@ section {
   flex-direction: column;
   align-items: center;
   margin: 40px;
-  margin-top: 50px;
   height: 80px;
 }
 
@@ -209,10 +207,24 @@ section {
     max-width: 400px;
   }
 
+  .project-thumbnail{
+    height: 120px;
+  }
+  .knowledge{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
 
 @media screen and (max-width: 518px) {
-
+  .bubble::after{
+    border-top-left-radius: 109% 65% !important;
+    border-top-right-radius: 100% 65% !important;
+  }
   a,
   h2,
   h3,
@@ -233,7 +245,48 @@ section {
   }
 }
 
-@media screen and (max-width: 442px) {
+/* Large mobile */
+@media screen and (max-width: 445px) {
+  #python, #js, #html, #css, #project-name{
+    font-size: 15px;
+  }
+
+  section{
+    min-height: 292px;
+  }
+
+  .custom-shape-divider-top {
+    margin-top: 392px;
+  }
+
+  h1{font-size: 22px;}
+
+  #section-title{
+    font-size: 22px;
+    margin-bottom: 45px;
+  }
+
+  p{
+    width: 60%;
+  }
+
+  .project-container{
+    margin-bottom: 25px !important;
+  }
+
+
+  .nav-options{
+    font-size: 11px !important;
+    font-weight: 600;
+    /* font-size: 10px !important; */
+  }
+  .project-thumbnail{
+    height: 80px;
+  }
+  .skills-item{
+    height: 50px !important;
+  }
+
   .progress-bar--container {
     max-width: 250px;
   }
@@ -254,6 +307,9 @@ section {
   }
 
   #projects>p {}
+  .project-container{
+    margin: 0px
+  }
 }
 
 .blue {
@@ -271,6 +327,23 @@ section {
 
 .dark {
   background: #0f0f10;
+}
+
+
+
+
+/* Medium mobile */
+@media screen and (max-width: 386){
+
+  .nav-options{
+    font-size: 10px !important;
+  }
+  .nav-btns{
+      width: 350px;
+  }
+  .project-container{
+    margin: 1px !important;
+  }
 }
 
 /* Curved bg with plain CSS */
