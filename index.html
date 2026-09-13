@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="green">
+<!--
+  ╔══════════════════════════════════════════════╗
+  ║  01001000 01100101 01101100 01101100 01101111 ║
+  ║  If you're reading this, you're my kind of   ║
+  ║  person. Try the Konami code on the page ;)  ║
+  ╚══════════════════════════════════════════════╝
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neeraj S — developer, tinkerer, caffeine-powered debugger.">
+    <meta name="theme-color" content="#0c0c0c">
+    <title>neeraj@portfolio:~$</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- CRT scanline overlay -->
+    <div class="scanlines" aria-hidden="true"></div>
+
+    <!-- ==================== BOOT SCREEN ==================== -->
+    <div id="boot">
+        <div id="boot-log"></div>
+        <div id="boot-skip">press any key to skip...</div>
+    </div>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main id="main" class="hidden">
+
+        <!-- Navigation -->
+        <nav id="nav">
+            <div class="nav-left">
+                <span class="nav-user" id="nav-name">neeraj</span><span class="nav-at">@</span><span class="nav-host">portfolio</span><span class="nav-colon">:</span><span class="nav-tilde">~$</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link" data-section="about">./about</a>
+                <a href="#skills" class="nav-link" data-section="skills">./skills</a>
+                <a href="#projects" class="nav-link" data-section="projects">./projects</a>
+                <a href="#contact" class="nav-link" data-section="contact">./contact</a>
+            </div>
+        </nav>
+
+        <!-- ===== HERO ===== -->
+        <section id="hero">
+            <h1 class="glitch" data-text="NEERAJ" id="hero-name">NEERAJ</h1>
+            <div class="hero-sub">
+                <span class="prompt">&gt;&nbsp;</span>
+                <span id="typed-tagline"></span><span class="cursor" aria-hidden="true">█</span>
+            </div>
+            <div class="hero-hint fade-in-section">
+                <span class="comment">/* scroll down to explore */</span>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT ===== -->
+        <section id="about" class="fade-in-section">
+            <h2 class="section-heading"><span class="comment">// about.md</span></h2>
+            <div class="terminal">
+                <div class="terminal-bar">
+                    <span class="dot dot--red"></span>
+                    <span class="dot dot--yellow"></span>
+                    <span class="dot dot--green"></span>
+                    <span class="terminal-title">neofetch</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="neofetch">
+                        <pre class="neofetch-ascii" aria-hidden="true">
+    ╔══════════╗
+    ║  ╭─────╮ ║
+    ║  │ N S │ ║
+    ║  ╰─────╯ ║
+    ║  ◀ ☰ ▶  ║
+    ╚══════════╝</pre>
+                        <div class="neofetch-info">
+                            <span class="nf-title">neeraj<span class="nf-at">@</span>portfolio</span>
+                            <span class="nf-sep">──────────────────</span>
+                            <span class="nf-line"><span class="nf-key">Role:</span> Developer / Tinkerer</span>
+                            <span class="nf-line"><span class="nf-key">Location:</span> India 🇮🇳</span>
+                            <span class="nf-line"><span class="nf-key">Editor:</span> VS Code</span>
+                            <span class="nf-line"><span class="nf-key">Languages:</span> Python, JS, Dart</span>
+                            <span class="nf-line"><span class="nf-key">Frameworks:</span> Flutter, Flask</span>
+                            <span class="nf-line"><span class="nf-key">Interests:</span> ML, Web Dev, Hardware</span>
+                            <span class="nf-line"><span class="nf-key">Fun fact:</span> I debug with print()</span>
+                            <span class="nf-sep">──────────────────</span>
+                            <span class="nf-line"><span class="nf-key">Coffee</span> <span class="nf-bar">████████████████░░</span> 89%</span>
+                            <span class="nf-line"><span class="nf-key">Code&nbsp;&nbsp;</span> <span class="nf-bar">██████████████░░░░</span> 78%</span>
+                            <span class="nf-line"><span class="nf-key">Sleep&nbsp;</span> <span class="nf-bar">███████░░░░░░░░░░░</span> 39%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="about-quote fade-in-section">
+                <span class="prompt">&gt;</span> "Fueled by caffeine, powered by curiosity, occasionally powered by solder fumes."
+            </p>
+        </section>
+
+        <!-- ===== SKILLS ===== -->
+        <section id="skills" class="fade-in-section">
+            <h2 class="section-heading"><span class="comment">// skills.sh</span></h2>
+            <div class="terminal">
+                <div class="terminal-bar">
+                    <span class="dot dot--red"></span>
+                    <span class="dot dot--yellow"></span>
+                    <span class="dot dot--green"></span>
+                    <span class="terminal-title">apt list --installed</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="skill-row">
+                        <span class="skill-name">python</span>
+                        <span class="skill-bar-track"><span class="skill-bar-fill" style="--fill: 90%"></span></span>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-name">javascript</span>
+                        <span class="skill-bar-track"><span class="skill-bar-fill" style="--fill: 78%"></span></span>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-name">html/css</span>
+                        <span class="skill-bar-track"><span class="skill-bar-fill" style="--fill: 92%"></span></span>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-name">flutter</span>
+                        <span class="skill-bar-track"><span class="skill-bar-fill" style="--fill: 65%"></span></span>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-name">machine-learning</span>
+                        <span class="skill-bar-track"><span class="skill-bar-fill" style="--fill: 55%"></span></span>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-name">git</span>
+                        <span class="skill-bar-track"><span class="skill-bar-fill" style="--fill: 85%"></span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROJECTS ===== -->
+        <section id="projects" class="fade-in-section">
+            <h2 class="section-heading"><span class="comment">// ls ~/projects/</span></h2>
+            <div class="projects-grid">
+
+                <a href="https://github.com/Neeraj029/Face-Mask-detection" target="_blank" rel="noopener" class="project-card fade-in-section">
+                    <div class="project-head">
+                        <span class="folder-icon">📂</span>
+                        <span class="project-name">face-mask-detection/</span>
+                    </div>
+                    <p class="project-desc">Real-time mask detection using OpenCV & deep learning. Keeps the world safe, one frame at a time.</p>
+                    <div class="project-tags">
+                        <span class="tag">python</span><span class="tag">opencv</span><span class="tag">ml</span>
+                    </div>
+                    <span class="project-link-hint">→ view source</span>
+                </a>
+
+                <a href="https://github.com/Neeraj029/todo-app-flutter" target="_blank" rel="noopener" class="project-card fade-in-section">
+                    <div class="project-head">
+                        <span class="folder-icon">📂</span>
+                        <span class="project-name">todays-todo/</span>
+                    </div>
+                    <p class="project-desc">A clean Flutter to-do app. Because every dev builds one — mine actually looks good.</p>
+                    <div class="project-tags">
+                        <span class="tag">flutter</span><span class="tag">dart</span><span class="tag">mobile</span>
+                    </div>
+                    <span class="project-link-hint">→ view source</span>
+                </a>
+
+                <a href="https://github.com/Neeraj029/Youtube-Clone" target="_blank" rel="noopener" class="project-card fade-in-section">
+                    <div class="project-head">
+                        <span class="folder-icon">📂</span>
+                        <span class="project-name">youtube-clone/</span>
+                    </div>
+                    <p class="project-desc">Pixel-perfect YouTube frontend clone. No ads though — you're welcome.</p>
+                    <div class="project-tags">
+                        <span class="tag">html</span><span class="tag">css</span><span class="tag">javascript</span>
+                    </div>
+                    <span class="project-link-hint">→ view source</span>
+                </a>
+
+                <a href="https://github.com/Neeraj029/Slack-clone" target="_blank" rel="noopener" class="project-card fade-in-section">
+                    <div class="project-head">
+                        <span class="folder-icon">📂</span>
+                        <span class="project-name">slack-clone/</span>
+                    </div>
+                    <p class="project-desc">Slack's UI recreated from scratch. All the looks, none of the notifications.</p>
+                    <div class="project-tags">
+                        <span class="tag">html</span><span class="tag">css</span><span class="tag">javascript</span>
+                    </div>
+                    <span class="project-link-hint">→ view source</span>
+                </a>
+
+                <a href="https://github.com/Neeraj029/Quickpad-Texteditor" target="_blank" rel="noopener" class="project-card fade-in-section">
+                    <div class="project-head">
+                        <span class="folder-icon">📂</span>
+                        <span class="project-name">quickpad/</span>
+                    </div>
+                    <p class="project-desc">Lightweight text editor built with Python & Tkinter. Notepad who?</p>
+                    <div class="project-tags">
+                        <span class="tag">python</span><span class="tag">tkinter</span><span class="tag">desktop</span>
+                    </div>
+                    <span class="project-link-hint">→ view source</span>
+                </a>
+
+                <a href="https://github.com/Neeraj029/ProcrastinationBot" target="_blank" rel="noopener" class="project-card fade-in-section">
+                    <div class="project-head">
+                        <span class="folder-icon">📂</span>
+                        <span class="project-name">procrastination-bot/</span>
+                    </div>
+                    <p class="project-desc">A bot that reminds you to stop procrastinating. Ironic? Maybe. Useful? Definitely.</p>
+                    <div class="project-tags">
+                        <span class="tag">python</span><span class="tag">bot</span><span class="tag">automation</span>
+                    </div>
+                    <span class="project-link-hint">→ view source</span>
+                </a>
+
+                <a href="https://github.com/Neeraj029/wallpaper-fetcher" target="_blank" rel="noopener" class="project-card fade-in-section">
+                    <div class="project-head">
+                        <span class="folder-icon">📂</span>
+                        <span class="project-name">wallpaper-fetcher/</span>
+                    </div>
+                    <p class="project-desc">Auto-fetches stunning wallpapers. My desktop thanks me daily.</p>
+                    <div class="project-tags">
+                        <span class="tag">python</span><span class="tag">api</span><span class="tag">scraping</span>
+                    </div>
+                    <span class="project-link-hint">→ view source</span>
+                </a>
+
+                <a href="https://github.com/Neeraj029/iCoder-v2.0.1" target="_blank" rel="noopener" class="project-card fade-in-section">
+                    <div class="project-head">
+                        <span class="folder-icon">📂</span>
+                        <span class="project-name">icoder-blog/</span>
+                    </div>
+                    <p class="project-desc">A slick blog template for developers. Content optional, style mandatory.</p>
+                    <div class="project-tags">
+                        <span class="tag">html</span><span class="tag">css</span><span class="tag">bootstrap</span>
+                    </div>
+                    <span class="project-link-hint">→ view source</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section id="contact" class="fade-in-section">
+            <h2 class="section-heading"><span class="comment">// contact.json</span></h2>
+            <div class="terminal">
+                <div class="terminal-bar">
+                    <span class="dot dot--red"></span>
+                    <span class="dot dot--yellow"></span>
+                    <span class="dot dot--green"></span>
+                    <span class="terminal-title">cat contact.json</span>
+                </div>
+                <div class="terminal-body">
+<pre class="contact-json">{
+  <span class="json-key">"name"</span>:    <span class="json-val">"Neeraj S"</span>,
+  <span class="json-key">"github"</span>:  <span class="json-link"><a href="https://github.com/Neeraj029" target="_blank" rel="noopener">"github.com/Neeraj029"</a></span>,
+  <span class="json-key">"discord"</span>: <span class="json-val">"Neeraj#1004"</span>,
+  <span class="json-key">"status"</span>:  <span class="json-val">"open to opportunities"</span>,
+  <span class="json-key">"coffee"</span>:  <span class="json-bool">true</span>
+}</pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECRET SECTION (hidden by default) ===== -->
+        <section id="secret" class="hidden">
+            <div class="terminal">
+                <div class="terminal-bar">
+                    <span class="dot dot--red"></span>
+                    <span class="dot dot--yellow"></span>
+                    <span class="dot dot--green"></span>
+                    <span class="terminal-title">~/.secret</span>
+                </div>
+                <div class="terminal-body">
+<pre class="secret-content">
+ ╔═══════════════════════════════════════════════════╗
+ ║  🎮  You found the secret zone!                  ║
+ ╠═══════════════════════════════════════════════════╣
+ ║                                                   ║
+ ║  &gt; You're clearly someone who explores.           ║
+ ║  &gt; That's a trait I deeply respect.               ║
+ ║                                                   ║
+ ║  Here's a cookie: 🍪                              ║
+ ║                                                   ║
+ ║  More things to discover:                         ║
+ ║  ├── Try the Konami code (↑↑↓↓←→←→BA)           ║
+ ║  ├── Open DevTools console (F12)                  ║
+ ║  ├── Click my name a few times...                 ║
+ ║  └── Switch tabs and watch the title change       ║
+ ║                                                   ║
+ ║  Thanks for exploring! — Neeraj                   ║
+ ╚═══════════════════════════════════════════════════╝
+</pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer fade-in-section">
+            <span class="comment">/* crafted with ❤️, caffeine, and questionable sleep schedules */</span>
+            <br>
+            <span class="comment">/* v2.0 — last compiled: <span id="compile-date"></span> */</span>
+        </footer>
+
+    </main>
+
+    <!-- ==================== STATUS BAR ==================== -->
+    <div id="statusbar">
+        <span class="sb-section" id="sb-user">neeraj@portfolio</span>
+        <span class="sb-section" id="sb-uptime">⏱ uptime: 0s</span>
+        <span class="sb-section sb-hint" id="sb-hint">press <kbd>~</kbd> for secrets</span>
+        <span class="sb-section" id="sb-clock"></span>
+    </div>
+
+
+
+    <canvas id="matrix-canvas" class="hidden" aria-hidden="true"></canvas>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
